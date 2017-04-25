@@ -1,0 +1,19 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditTextPreference
+        android:title="@string/pref_index_label"
+        android:key="@string/pref_index_key"
+        android:defaultValue="@string/pref_index_default"
+        android:inputType="text"
+        android:singleLine="true" />
+
+    <EditTextPreference
+        android:title="@string/pref_size_label"
+        android:key="@string/pref_size_key"
+        android:defaultValue="@string/pref_size_default"
+        android:inputType="text"
+        android:singleLine="true" />
+
+</PreferenceScreen>

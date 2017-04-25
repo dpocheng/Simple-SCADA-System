@@ -1,0 +1,50 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pocheng.cs125.project.simplescada.SearchKeywordFragment">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords"
+        android:hint="Area (Required)"
+        android:ems="10"
+        android:id="@+id/area_editText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords"
+        android:hint="Device (Optional)"
+        android:ems="10"
+        android:id="@+id/device_editText"
+        android:layout_below="@id/area_editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:imeOptions="actionDone"
+        android:imeActionLabel="Over and out!"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:id="@+id/search_button"
+        android:layout_below="@id/device_editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:layout_below="@id/search_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"/>
+
+
+</RelativeLayout>

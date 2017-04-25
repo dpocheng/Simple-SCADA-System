@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome to our App!"
+                android:textSize="25sp"
+                android:textStyle="bold">
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/button_list"
+                android:orientation="vertical"
+                android:layout_width="224dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <Button
+                    android:id="@+id/button1"
+                    android:text="Background"
+                    style="@style/ButtonStyle"
+                    android:contentDescription="Test">
+                </Button>
+
+                <Button
+                    android:id="@+id/button2"
+                    android:text="Show All Records"
+                    style="@style/ButtonStyle"
+                    android:contentDescription="Show">
+                </Button>
+
+                <Button
+                    android:id="@+id/button3"
+                    android:text="Search Keyword"
+                    style="@style/ButtonStyle"
+                    android:contentDescription="Search">
+                </Button>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

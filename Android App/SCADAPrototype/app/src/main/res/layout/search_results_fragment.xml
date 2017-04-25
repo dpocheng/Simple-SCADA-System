@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="pocheng.cs125.project.simplescada.SearchResultsFragment">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:paddingBottom="25dp">
+
+        <TextView
+            android:id="@+id/results_area_header"
+            android:layout_width="50dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/hello_blank_fragment" />
+
+        <!--<TextView
+            android:id="@+id/results_area"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:text="@string/hello_blank_fragment" />-->
+
+        <TextView
+            android:id="@+id/results_device_header"
+            android:layout_width="50dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:text="@string/hello_blank_fragment" />
+
+        <!--<TextView
+            android:id="@+id/results_device"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent"
+            android:text="@string/hello_blank_fragment" />-->
+    </LinearLayout>
+
+    <include layout="@layout/recyclerview_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </include>
+
+</LinearLayout>
